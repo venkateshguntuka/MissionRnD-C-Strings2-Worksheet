@@ -18,7 +18,7 @@ original String
 #include <stdlib.h>
 
 char * get_sub_string(char *str, int i, int j){
-	if (str == NULL)
+	if (str == NULL||i>j)
 		return NULL;
 	char *substr = (char *)malloc(sizeof(char)*(j - i + 1));
 	int index = 0;

@@ -11,8 +11,7 @@ Note:Dont modify original string Neglect Spaces at the right end and at left end
 #include <stdlib.h>
 int strLength(char *str);
 char * get_last_word(char * str){
-	int length = 0;
-	length = strLength(str);
+	int length = strLength(str);
 	int i, pos = 0;
 	for (i = length - 1; i>pos; i--)
 	{
@@ -21,9 +20,7 @@ char * get_last_word(char * str){
 			pos = i + 1;
 			break;
 		}
-
 	}
-
 	char *result = (char *)malloc(sizeof(char)*(length - pos));
 	int index = 0;
 	for (i = pos; str[i] != '\0'; i++)
