@@ -11,10 +11,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Consonants_Vowels.cpp" />
+    <ClCompile Include="Consonants_Vowels.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="getFrequencyofWord.cpp" />
-    <ClCompile Include="getLastWord.cpp" />
-    <ClCompile Include="getSubstring.cpp" />
+    <ClCompile Include="getLastWord.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="getSubstring.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="MainStrings2.cpp" />
   </ItemGroup>
   <ItemGroup>
